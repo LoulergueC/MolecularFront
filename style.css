@@ -3270,7 +3270,11 @@ fieldset:disabled .btn {
 
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #4582ec;
+    background-image: linear-gradient(
+        135deg,
+        rgb(48, 34, 58),
+        rgb(241, 56, 0) 75%
+    );
     --bs-btn-border-color: #4582ec;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #3b6fc9;
