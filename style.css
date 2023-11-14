@@ -9173,8 +9173,14 @@ fieldset:disabled .btn {
 
 /* rtl:end:remove */
 .text-primary {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+    background-image: linear-gradient(
+        135deg,
+        rgb(48, 34, 58),
+        rgb(241, 56, 0) 75%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .text-secondary {
@@ -12952,7 +12958,7 @@ table,
 .card-text {
     text-align: justify;
 }
-.card img {
+.card:not(.comment) img {
     margin: 0.5rem;
     width: calc(100% - 1rem);
     border-radius: 0.5rem;
