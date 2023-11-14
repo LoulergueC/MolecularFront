@@ -13013,9 +13013,13 @@ table,
     text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
     background: center/cover no-repeat;
 }
-.card.event {
+.card.event,
+section .card {
     flex-direction: row;
     padding: 1rem 0;
+}
+section .card {
+    margin-top: 2rem;
 }
 .event-container {
     min-height: 100vh;
@@ -13037,4 +13041,7 @@ table,
     padding: 0.25rem 0.5rem;
     background-color: rgba(var(--bs-body-bg-rgb), 1);
     border-radius: 0.5rem;
+}
+.card.no-shadow {
+    box-shadow: none;
 }
