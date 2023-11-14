@@ -12908,3 +12908,23 @@ table,
 .list-group {
     font-size: 0.9625rem;
 }
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+        135deg,
+        rgb(48, 34, 58),
+        rgb(241, 56, 0) 75%
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(135deg, rgb(48, 34, 58), rgb(241, 56, 0) 75%);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
