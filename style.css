@@ -13045,3 +13045,14 @@ section .card {
 .card.no-shadow {
     box-shadow: none;
 }
+.dashboard {
+    padding: 0;
+    height: 100vh;
+}
+.dashboard .nav {
+    height: 100vh;
+    padding-top: 1rem;
+}
+.dashboard .nav .nav-link.active {
+    background-color: rgba(var(--bs-body-bg-rgb), 0.3);
+}
